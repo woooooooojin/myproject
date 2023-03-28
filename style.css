@@ -635,6 +635,7 @@ header .logo_ex .logo_L .line {
     outline: none;
     position: relative;
     border: 1px solid #ccc;
+    background-color: #fff;
 }
 
 .mobile_search_box button {
