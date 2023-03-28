@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부민병원</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo_ex">
+                <div class="logo_L">
+                    <div class="logo_l_img">
+                        <a href="#!"><img src="./imges/fam_logo.png" alt="img"></a>
+                    </div>
+                    <div class="mobile_ham">
+                        <input type="checkbox" id="ham_chk">
+                        <label for="ham_chk">
+                            <div class="line_ex">
+                                <span class="line line1"></span>
+                                <span class="line line2"></span>
+                                <span class="line line3"></span>
+                            </div>
+                        </label>
+                        <div class="ham_menu_list">
+                            <ul>
+                                <li>
+                                    <ul class="box1">
+                                        <li>전체메뉴</li>
+                                        <li>
+                                            <a href="./index.html"><i class="fas fa-home" style="color: #fff"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="box2">
+                                        <li class="box2_login">로그인</li>
+                                        <li class="join">회원가입</li>
+                                        <li class="box2_lang">
+                                            <input type="checkbox" id="lang_chk">
+                                            <label for="lang_chk">language <i class="fas fa-chevron-down"
+                                                    style="color: #fff;"></i> </label>
+                                            <div class="lang_box">
+                                                <ul class="lang_inner">
+                                                    <li><a href="#!">English</a></li>
+                                                    <li><a href="#!">Japan</a> </li>
+                                                    <li><a href="#!">China</a> </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--box2 end-->
+                            </ul>
+                            <div class="myinfo">
+                                <input type="checkbox" id="myinfo_chk">
+
+                                <label for="myinfo_chk" class="myinfo_open">나의진료정보 <i
+                                        class="fas fa-chevron-down"></i></label>
+                                <label for="myinfo_chk" class="myinfo_close">나의진료정보 <i
+                                        class="fas fa-chevron-up"></i></label>
+
+                                <div class="myinfo_list">
+                                    <ul>
+                                        <li>온라인진료예약</li>
+                                        <li>예약현황조회</li>
+                                        <li>증명서 재발급</li>
+                                        <li>증명서 발급내역</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <!--myinfo end-->
+
+                            <div class="center">
+                                <input type="checkbox" id="center_chk">
+
+                                <label for="center_chk" class="center_open">전문센터 <i
+                                        class="fas fa-chevron-down"></i></label></label>
+                                <label for="center_chk" class="center_close">전문센터 <i
+                                        class="fas fa-chevron-up"></i></label></label>
+
+                                <div class="center_list">
+                                    <ul>
+                                        <li><a href="#!">관절센터</a></li>
+                                        <li>로봇수술센터</li>
+                                        <li>척추내시경센터</li>
+                                        <li>척추변형센터</li>
+                                        <li>심혈관센터</li>
+                                        <li>뇌신경센터</li>
+                                        <li>인공신장센터</li>
+                                        <li>소화기센터</li>
+                                        <li>건강검진센터</li>
+                                        <li>재활운동치료센터</li>
+                                        <li>외상골절센터</li>
+                                        <li>지역응급의료기관</li>
+                                        <li>국제진료센터</li>
+                                        <li>임상시험센터</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--center end-->
+
+                            <div class="medi_info">
+                                <input type="checkbox" id="mediinfo_chk">
+
+                                <label for="mediinfo_chk" class="mediinfo_open">진료안내 <i
+                                        class="fas fa-chevron-down"></i></label></label></label>
+                                <label for="mediinfo_chk" class="mediinfo_close">진료안내 <i
+                                        class="fas fa-chevron-up"></i></label></label></label>
+
+                                <div class="mediinfo_list">
+                                    <ul>
+                                        <li>진료시간표</li>
+                                        <li>진료과</li>
+                                        <li>의료진</li>
+                                        <li>외래진료</li>
+                                        <li>입/퇴원</li>
+                                        <li>응급실</li>
+                                        <li>진료협력센터</li>
+                                        <li>국제진료센터</li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <!--medinfo end-->
+
+                            <div class="use_info">
+                                <input type="checkbox" id="useinfo_chk">
+
+                                <label for="useinfo_chk" class="useinfo_open">이용안내 <i
+                                        class="fas fa-chevron-down"></i></label>
+                                <label for="useinfo_chk" class="useinfo_close">이용안내 <i
+                                        class="fas fa-chevron-up"></i></label>
+
+                                <div class="useinfo_list">
+                                    <ul>
+                                        <li>진료상담콜센터</li>
+                                        <li>비급여진료비</li>
+                                        <li>장비안내</li>
+                                        <li>층별안내</li>
+                                        <li>주차안내</li>
+                                        <li>편의시설</li>
+                                        <li>오시는길</li>
+
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                            <!--use_info end-->
+
+                            <div class="intro">
+                                <input type="checkbox" id="intro_chk">
+
+                                <label for="intro_chk" class="intro_open">병원소개 <i
+                                        class="fas fa-chevron-down"></i></label>
+                                <label for="intro_chk" class="intro_close">병원소개 <i
+                                        class="fas fa-chevron-up"></i></label>
+
+                                <div class="intro_list">
+                                    <ul>
+                                        <li>병원장 인사말</li>
+                                        <li>비전과 핵심가치</li>
+                                        <li>부민스토리</li>
+                                        <li>연혁</li>
+                                        <li>조직도</li>
+                                        <li>연구교육</li>
+                                        <li>임상시험센터</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--intro end-->
+
+                            <div class="reservation">
+                                <div class="res_inner">
+                                    <div class="res_online">
+                                        <a href="#!">
+                                            <p>온라인 예약 <i class="fas fa-mouse-pointer"></i></p>
+                                        </a>
+                                    </div>
+                                    <div class="res_offline">
+                                        <a href="#!">
+                                            <p>전화예약 <i class="fas fa-phone"></i></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--ham menulist end-->
+
+                    </div>
+                    <!--mobile,tablet ham_menu-->
+
+
+
+                </div>
+                <!--logo L end-->
+                <div class="logo_M">
+                    <img src="./imges/main_logo.png" alt="mainlogo">
+                </div>
+                <div class="logo_R">
+
+                    <div class="gnb">
+                        <div class="gnb_login"><a href="#!">로그인</a></div>
+                        <div class="gnb_join"><a href="#!">회원가입</a></div>
+                        <div class="gnb_language">
+                            <input type="checkbox" id="gnb_chk">
+                            <label for="gnb_chk" class="gnb_open">language <i class="fas fa-chevron-up"></i></label>
+                            <label for="gnb_chk" class="gnb_close">language <i class="fas fa-chevron-down"></i></label>
+
+                            <div class="gnb_chk_list">
+                                <ul>
+                                    <li><a href="#!">English</a></li>
+                                    <li><a href="#!">Japan</a></li>
+                                    <li><a href="#!">China</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="checkbox" id="search_chk">
+                    <label for="search_chk" class="search_chk_label"><i class="fas fa-search"
+                            style="color: #888;"></i></label>
+                    <div class="mobile_search_box">
+                        <input type="search" placeholder=" 검색어를 입력해주세요.">
+                        <button type="submit">검색</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!--container end-->
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="lnb">
+                <ul class="lnb_tit">
+                    <li><a href="#!">나의진료정보</a>
+                        <ul class="lnb_myinfo">
+                            <li><a href="#!">온라인 진료예약</a></li>
+                            <li><a href="#!">예약현황조회</a></li>
+                            <li><a href="#!">증명서재발급</a></li>
+                            <li><a href="#!">증병서발급내역</a></li>
+
+                        </ul>
+                    </li>
+                    <!--lnb myinfo end-->
+                    <li><a href="#!">전문센터</a>
+                        <ul class="lnb_center_list">
+                            <li><a href="./subpage/sub.html">관절센터</a></li>
+                            <li><a href="#!">로봇수술센터</a></li>
+                            <li><a href="#!">척추내시경센터</a></li>
+                            <li><a href="#!">척추변형센터</a></li>
+                            <li><a href="#!">심혈관센터</a></li>
+                            <li><a href="#!">인공신장센터</a></li>
+                            <li><a href="#!">소화기센터</a></li>
+                            <li><a href="#!">건강검진센터</a></li>
+                            <li><a href="#!">재활운동치료센터</a></li>
+                            <li><a href="#!">외상골절센터</a></li>
+                            <li><a href="#!">지역응급의료기관</a></li>
+                            <li><a href="#!">국제진료센터</a></li>
+                            <li><a href="#!">임상시험센터</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">진료안내</a>
+                        <ul class="lnb_medi_info">
+                            <li><a href="#!">진료시간표</a></li>
+                            <li><a href="#!">진료과</a></li>
+                            <li><a href="#!">의료진</a></li>
+                            <li><a href="#!">외래진료</a></li>
+                            <li><a href="#!">입/퇴원</a></li>
+                            <li><a href="#!">응급실</a></li>
+                            <li><a href="#!">진료협력센터</a></li>
+                            <li><a href="#!">국제진료센터</a></li>
+                        </ul>
+                    </li>
+                    <!--lnb_medi_info end-->
+                    <li><a href="#!">이용안내</a>
+                        <ul class="lnb_use_info">
+                            <li><a href="#!">진료상담콜센터</a></li>
+                            <li><a href="#!">비급여진료비</a></li>
+                            <li><a href="#!">장비안내</a></li>
+                            <li><a href="#!">층별안내</a></li>
+                            <li><a href="#!">주차안내</a></li>
+                            <li><a href="#!">편의시설</a></li>
+                            <li><a href="#!">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <!--lnb_use_info end-->
+                    <li><a href="#!">병원소개</a>
+                        <ul class="lnb_intro">
+                            <li><a href="#!">병원장인사말</a></li>
+                            <li><a href="#!">비전과핵심가치</a></li>
+                            <li><a href="#!">부민스토리</a></li>
+                            <li><a href="#!">연혁</a></li>
+                            <li><a href="#!">조직도</a></li>
+                            <li><a href="#!">연구교육</a></li>
+                            <li><a href="#!">임상시험센터</a></li>
+                        </ul>
+                    </li>
+                    <!--lnb intro end-->
+                </ul>
+            </div>
+            <!--lnb end-->
+        </div>
+        <!--container end-->
+    </nav>
+
+    <div class="visual_main">
+        <div class="container">
+            <div class="visual_slider">
+                <div class="v_img">
+                    <img src="./imges/visual_main_1111.jpg" alt="img">
+                </div>
+                <div class="v_img">
+                    <img src="./imges/visual_main_2222.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+        <!--container end-->
+    </div>
+    <!--visual_main end-->
+
+    <main>
+        <div class="container">
+            <div class="main_wrap">
+                <div class="main_search">
+                    <h4>진료과 · 의료진검색</h4>
+                    <div class="m_searchbox">
+                        <input type="text">
+                        <i class="fas fa-search"></i>
+                    </div>
+
+                    <div class="m_search_btn">
+                        <div><a href="#!">진료과</a></div>
+                        <div><a href="#!">의료진</a></div>
+                    </div>
+                </div>
+                <!--main_search end-->
+
+                <div class="main_reservation">
+                    <h4>온라인 진료예약</h4>
+                    <div class="m_search_btn">
+                        <div><a href="#!">진료과</a></div>
+                        <div><a href="#!">의료진</a></div>
+                        <div class="msearch_btn_2"><a href="#!">간편전화예약</a></div>
+                    </div>
+
+                </div>
+                <!--main_reservation end-->
+
+                <div class="main_login">
+                    <h4>로그인</h4>
+                    <div class="main_login_box">
+                        <input type="text" placeholder=" 아이디">
+                        <input type="text" placeholder=" 패스워드">
+                        <div class="main_join">
+                            <a href="#!">회원가입</a>
+                            <a href="#!">아이디/비밀번호찾기</a>
+
+                        </div>
+                        <button type="submit">로그인</button>
+                    </div>
+                </div>
+                <!--main_login end-->
+            </div>
+            <!--main_wrap end-->
+
+        </div>
+        <!--container end-->
+    </main>
+
+    <section class="section1">
+        <div class="container">
+            <div class="section1_wrap">
+                <div class="section1_box1 s1box">
+                    <h4>진료안내</h4>
+                    <p>대표전화<br /> <span>1670 - 0082</span></p>
+                    <div class="sec1_btn">
+                        <a href="#!">외래안내</a>
+                        <a href="#!">진료시간표</a>
+                    </div>
+                </div>
+                <!--section1 box1 end-->
+
+                <div class="section1_box2 s1box">
+                    <h4>위임장/동의서/증명서</h4>
+                    <p>위임장,동의서,<br />증명서 발급안내</p>
+                    <div class="sec1_btn">
+                        <a href="#!">위임/동의서</a>
+                        <a href="#!">증명서</a>
+                    </div>
+                </div>
+                <div class="section1_box3 s1box">
+                    <h4>고객의 소리</h4>
+                    <p>환자 및 보호자의 소리를<br />경청하고 개선하겠습니다.</p>
+                    <div class="sec1_btn box3_btn">
+                        <a href="#!">감사합니다.</a>
+                        <a href="#!">건의합니다.</a>
+                    </div>
+                </div>
+                <!--box3 end-->
+                <div class="section1_box4 s1box">
+                    <h4>카카오 챗봇</h4>
+                    <p>실시간 고객과 소통하는<br />일대일 채팅상담</p>
+                    <div class="sec1_btn box4_btn">
+                        <a href="#!">친구추가</a>
+                    </div>
+                </div>
+                <!--box4 end-->
+            </div>
+        </div>
+        <!--container end-->
+    </section>
+
+    <section class="section2">
+        <div class="container">
+            <div class="section2_wrap">
+
+                <div class="notice_box1">
+                    <h4>공지사항</h4>
+                    <div class="notice_list">
+                        <a href="#!"><i class="fas fa-circle"></i> 대통령 주치의 강대환 병원장 진료개시</a>
+                        <a href="#!"><i class="fas fa-circle"></i> 지하철 2호선 이벤트 공지</a>
+                        <a href="#!"><i class="fas fa-circle"></i> 코로나19 및 독감 예방접종 실시</a>
+                    </div>
+                </div>
+                <!--noticebox1 end-->
+
+                <div class="notice_box2">
+                    <input type="radio" name="tab" id="tab01" checked>
+                    <input type="radio" name="tab" id="tab02">
+                    <input type="radio" name="tab" id="tab03">
+
+                    <div class="notice_label">
+                        <label for="tab01" class="label_01">병원소식</label>
+                        <label for="tab02" class="label_02">언론보도</label>
+                        <label for="tab03" class="label_03">채용</label>
+                    </div>
+
+                    <div class="sheet">
+                        <div class="sheet01">
+                            <div class="sheet_list">
+                                <a href="#!"><i class="fas fa-circle"></i> 행복 오케스트라 정기 연주회 성료</a>
+                                <a href="#!"><i class="fas fa-circle"></i> 국가건강검진 오는 6월까지 한시 연장</a>
+                                <a href="#!"><i class="fas fa-circle"></i> 전담 주치의 1:1 책임 수술제도</a>
+                            </div>
+                        </div>
+                        <div class="sheet02">
+                            <div class="sheet_list">
+                                <a href="#!"><i class="fas fa-circle"></i> 2호선 해운대역 해운대 부민병원역으로 불러주세요</a>
+                                <a href="#!"><i class="fas fa-circle"></i> 해운대 부민병원 응급의료센터장 의학교재 발간</a>
+                                <a href="#!"><i class="fas fa-circle"></i> 제6회 부산의료산업대상 국제의료협력 공로상 수상</a>
+                            </div>
+                        </div>
+                        <div class="sheet03">
+                            <div class="sheet_list">
+                                <a href="#!"><i class="fas fa-circle"></i> 전산실 직원 채용 공고</a>
+                                <a href="#!"><i class="fas fa-circle"></i> 응급실 간호사 채용 공고</a>
+                                <a href="#!"><i class="fas fa-circle"></i> 수술술 간호사 채용 공고</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!--section2_wrap end-->
+        </div>
+        <!--container end-->
+    </section>
+
+    <section class="section3">
+        <div class="container">
+            <div class="section3_wrap">
+                <div class="section3_tit">
+                    <h4>전문진료센터</h4>
+                </div>
+                <div class="section3_box">
+                    <input type="checkbox" id="sec3_chk" checked>
+
+                    <label for="sec3_chk" class="sec3_open"><i class="fas fa-times"></i></label>
+                    <label for="sec3_chk" class="sec3_close"><i class="fas fa-plus"></i></label>
+
+
+                    <div class="section3_list">
+                        <div class="section3_list_wrap">
+                            <div class="center_box">
+                                <a href="./subpage/sub.html">
+                                <h4>관절센터</h4>
+                                <div class="center_box_img">
+                                    <img src="./imges/center01.png" alt="img">
+                                </div>
+                                <p>보건복지부 지정 관절 전문병원 부위별 전문의료진 진료</p>
+                                </a>
+                            </div>
+
+                            <div class="center_box">
+                                <h4>로봇수술센터</h4>
+                                <div class="center_box_img">
+                                    <img src="./imges/center04.png" alt="img">
+                                </div>
+                                <p>의사의 치료 노하우와 로봇 정밀성의 결합</p>
+                            </div>
+
+                            <div class="center_box beige">
+                                <h4>척추센터</h4>
+                                <div class="center_box_img">
+                                    <img src="./imges/center07.png" alt="img">
+                                </div>
+                                <p>최소상처 척추수술 "국제의사 교육센터"지정</p>
+                            </div>
+
+                            <div class="center_box gray">
+                                <h4>척추내시경센터</h4>
+                                <div class="center_box_img">
+                                    <img src="./imges/center08.png" alt="img">
+                                </div>
+                                <p>의사의 치료 노하우와 로봇 정밀성의 결합</p>
+                            </div>
+
+                            <div class="center_box gray2">
+                                <h4>심혈관센터</h4>
+                                <div class="center_box_img">
+                                    <img src="./imges/center06.png" alt="img">
+                                </div>
+                                <p>심장 전문의가 365일 24시간 상주</p>
+                            </div>
+
+                            <div class="center_box brown">
+                                <h4>뇌신경센터</h4>
+                                <div class="center_box_img">
+                                    <img src="./imges/center05.png" alt="img">
+                                </div>
+                                <p>통증이 적고 빠른 회복이 가능한 최소침습치료 시행</p>
+                            </div>
+
+                            <div class="center_box">
+                                <h4>소화기센터</h4>
+                                <div class="center_box_img">
+                                    <img src="./imges/center01.png" alt="img">
+                                </div>
+                                <p>"우수내시경실 인증" 내시경 검사 및 감염관리 우수기관</p>
+                            </div>
+
+                            <div class="center_box">
+                                <h4>건강검진센터</h4>
+                                <div class="center_box_img">
+                                    <img src="./imges/center03.png" alt="img">
+                                </div>
+                                <p>질병의 조기발견으로 건강한 내일을 준비</p>
+                            </div>
+
+                        </div>
+                        <!--section3 list wrap end-->
+                    </div>
+                    <!--section3 list end-->
+
+                </div>
+
+            </div>
+        </div>
+        <!--container end-->
+    </section>
+
+    <section class="section4">
+        <div class="container">
+            <div class="section4_wrap">
+                <div class="section4_tit">
+                    <h4>미디어 센터</h4>
+                </div>
+                <div class="media_all_wrap">
+                    <div class="media_01 media_main">
+                        <div class="media_img">
+                            <a href="#!"><img src="./imges/media01.PNG" alt="img"></a>
+
+                        </div>
+                        <div class="media_desc">
+                            <a href="#!">척추관 협착증과 허리디스크를 혼동하고 계시진 않으신가요??<br />
+                                100세 시대에 접어들면서 자연스럽게 '건강'에 대한 관심이 높아지고
+                                있습니다. 하지만 그와 동시에 퇴행성 질환으로 인하여 통증을
+                                호소하시는 분들도 많아지고 있는데요. 그중에서도 가장 흔하게
+                                나타나는것이 바로 허리에서 나타나는 척추관 협착증 증상입니다.
+                                해당질환과 관련된 정보를 자세하게 이야기를 나누어 보도록 하겠습니다.
+                            </a>
+                        </div>
+                    </div>
+                    <!--media 01 end-->
+
+                    <div class="media_wrap">
+
+                        <div class="media_01 media02">
+                            <div class="media_img">
+                                <a href="#!"><img src="./imges/media20.jpg" alt="img"></a>
+
+                            </div>
+                            <div class="media_desc">
+                                <a href="#!">소아 휜 다리 성장에 문제없을까??<br />
+                                    성장판이 닫히면 기회는 사라지기 마련입니다.
+                                    주기적인 검사를 통해 성장을 저해하는 요인이 무엇인지 정확히 파악하고
+                                    신속하게 치료하는 것이 중요합니다 !
+                                </a>
+                            </div>
+                        </div>
+                        <!--media 01 end-->
+
+                        <div class="media_01 media03">
+                            <div class="media_img">
+                                <a href="#!"><img src="./imges/media40.jpg" alt="img"></a>
+
+                            </div>
+                            <div class="media_desc">
+                                <a href="#!">배가 자주 아프다면??<br />
+                                    갑자기 배가 아픈적이 있지 않으셨나요?
+                                    신경을 쓰는 일이 많거나 스트레스를 받게 되면 배가
+                                    아프다가 설사를 하는 경우가 종종 있을거에요.
+                                    그런 경우라면 여길 주목해주세요 !
+                                </a>
+                            </div>
+                        </div>
+                        <!--media 01 end-->
+
+                        <div class="media_01 media04">
+                            <div class="media_img">
+                                <a href="#!"><img src="./imges/media30.jpg" alt="img"></a>
+
+                            </div>
+                            <div class="media_desc">
+                                <a href="#!">알코올성 간질환 주의!!<br />
+                                    술을 자주 마시면 알코올성 간질환을 유발합니다
+                                    특히 간은 침묵의 장기라는 별명이 있을정도로
+                                    통증에 둔감합니다. 간 관리방법과
+                                    알코올성 간질환을 소개해 드리겠습니다.
+                                </a>
+                            </div>
+                        </div>
+                        <!--media 01 end-->
+
+                        <div class="media_01 media05">
+                            <div class="media_img">
+                                <a href="#!"><img src="./imges/media50.jpg" alt="img"></a>
+
+                            </div>
+                            <div class="media_desc">
+                                <a href="#!">명치 위 콕콕?? 담석증의 모든것!!<br />
+                                    '식사를 하고 자리에 앉으면 속이 더부록해요', '윗배 통증이 있어요'
+                                    한번쯤 겪어본 현상 ! 대수롭지 않게 지나갈수 있지만 지속된다면
+                                    담석증을 의심해 보세요 !
+                                </a>
+                            </div>
+                        </div>
+                        <!--media 01 end-->
+                    </div>
+                    <!--media wrap end-->
+                </div>
+
+
+
+            </div>
+            <!--section4_wrap end-->
+        </div>
+        <!--container end-->
+    </section>
+    <!--section4 end-->
+
+    <section class="section5">
+        <div class="container">
+            <div class="section5_wrap">
+                <div class="section5_tit">
+                    <h4>SNS</h4>
+                </div>
+                <div class="sns_box_wrap">
+                    <div class="sns_box">
+                        <a href="#!"><img src="./imges/snsimg01.jpg" alt=""></a>
+                        <div class="sns_logo">
+                            <a href="#!"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="sns_box">
+                        <a href="#!"><img src="./imges/snsimg02.jpg" alt=""></a>
+                        <div class="sns_logo">
+                            <a href="#!"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="sns_box">
+                        <a href="#!"><img src="./imges/snsimg03.jpg" alt=""></a>
+                        <div class="sns_logo">
+                            <a href="#!"><i class="fas fa-blog"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="sns_box">
+                        <a href="#!"><img src="./imges/snsimg04.jpg" alt=""></a>
+                        <div class="sns_logo">
+                            <a href="#!"><i class="fab fa-facebook-square"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--sns box wrap end-->
+
+            </div>
+            <!--section5_wrap-->
+        </div>
+        <!--container-->
+    </section>
+
+
+
+    <!--quick menu-->
+
+    <div class="quick_menu">
+        <div class="menu01 qbox"><a href="#!">채용공고</a></div>
+        <div class="menu02 qbox"><a href="#!">전화예약</a></div>
+        <div class="menu03 qbox"><a href="#!">온라인예약</a></div>
+        <div class="menu04 qbox"><a href="#!">진료시간표</a></div>
+        <div class="menu05 qbox"><a href="#!">증명서발급</a></div>
+        <div class="menu06 qbox"><a href="#!">오시는길</a></div>
+        <div class="q_top"><a href="#header">top</a></div>
+        <div class="q_bot"><a href="#footer">bottom</a></div>
+    </div>
+
+
+
+    <div class="top_btn">
+        <a href="#header">TOP</a>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer_wrap">
+                <div class="foot_logo">
+                    <img src="./imges/bumin_logo.jpg" alt="img">
+                </div>
+                <div class="foot_desc">
+                    <p>상호:의료법인 인당의료재단 해운대 부민병원 사업자변호 : 699-82-00072<br />
+                        주소 : 부산광역시 해운대구 해운대로 584(우동)<br />
+                        <a href="#!">이용약관</a> <a href="#!">개인정보처리방침</a> 대표자 : 정흥태<br />
+                        Copyright ⓒ 2020 BUMIN HOSPITAL All Right Reserved.</p>
+                </div>
+                <div class="foot_famsite">
+                    <select name="famsite" id="fam_site">
+                        <option>Family Site</option>
+                        <option value="서울부민병원">서울부민병원</option>
+                        <option value="부산부민병원">부산부민병원</option>
+                        <option value="해운대부민병원">해운대부민병원</option>
+                        <option value="부민의료재단">부민의료재단</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.visual_slider').slick({
+                dots: true,
+                autoplay: true,
+                fade: true,
+                speed: 900,
+            });
+        })
+    </script>
+
+</body>
+
+</html>
