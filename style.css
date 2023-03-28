@@ -617,7 +617,7 @@ header .logo_ex .logo_L .line {
 
 .mobile_search_box {
     position: absolute;
-    top: 80px;
+    top: 77px;
     left: 0;
     height: 0px;
     overflow: hidden;
@@ -635,7 +635,7 @@ header .logo_ex .logo_L .line {
     outline: none;
     position: relative;
     border: 1px solid #ccc;
-    background-color: #fff;
+    
 }
 
 .mobile_search_box button {
