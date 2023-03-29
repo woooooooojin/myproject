@@ -635,14 +635,13 @@ header .logo_ex .logo_L .line {
     outline: none;
     position: relative;
     border: 1px solid #ccc;
-    
 }
 
 .mobile_search_box button {
     width: 50px;
-    height: 50px;
+    height: 48px;
     position: absolute;
-    top: 3px;
+    top: 4px;
     right: 0;
     border-radius: 0 20px 20px 0;
     background-color: #67ae3e;
